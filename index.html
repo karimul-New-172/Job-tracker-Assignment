@@ -25,15 +25,15 @@
         <section class="grid grid-cols-3 gap-4 mt-5">
             <div class="bg-white p-3 rounded-lg">
                 <p class="font-semibold text-lg">Total</p>
-                <p id="total" class="font-bold text-3xl">0</p>
+                <p id="all-count" class="font-bold text-3xl">0</p>
             </div>
             <div class="bg-white p-3 rounded-lg">
                 <p class="font-semibold text-lg">Interview</p>
-                <p id="interview" class="font-bold text-green-500 text-3xl">0</p>
+                <p id="interview-count" class="font-bold text-green-500 text-3xl">0</p>
             </div>
             <div class="bg-white p-3 rounded-lg">
                 <p class="font-semibold text-lg">Rejected</p>
-                <p id="rejected" class="font-bold text-red-500 text-3xl">0</p>
+                <p id="rejected-count" class="font-bold text-red-500 text-3xl">0</p>
             </div>
         </section>
     </header>
@@ -41,23 +41,23 @@
     <hr class="w-11/12 mx-auto border border-gray-400 my-6">
 
     <!-- main part -->
-    <main class="w-11/12 mx-auto">
+    <main class="w-11/12 mx-auto pb-8">
         <div class="flex justify-between">
             <h2 class="text-neutral-600 text-2xl font-semibold">Available Jobs</h2>
-            <p class="text-neutral-600 font-semibold">0 jobs</p>
+            <p class="text-neutral-600 font-semibold"><span id="current-status">0</span> jobs</p>
         </div>
 
         <!-- toggle btn -->
         <div class="toggle-btn text-neutral-500 mt-4 space-x-1.5">
-            <button id="all-list-btn" class="bg-sky-500 text-white px-4 py-1 rounded-md">All</button>
-            <button id="interview-list-btn" class="bg-white px-4 py-1 rounded-md">Interview</button>
-            <button id="rejected-list-btn" class="bg-white px-4 py-1 rounded-md">Rejected</button>
+            <button onclick="toggleStyle('btn-all')" id="btn-all" class="btn bg-sky-500 text-white px-4 py-1 rounded-md">All</button>
+            <button onclick="toggleStyle('btn-interview')" id="btn-interview" class="btn bg-white px-4 py-1 rounded-md">Interview</button>
+            <button onclick="toggleStyle('btn-rejected')" id="btn-rejected" class="btn bg-white px-4 py-1 rounded-md">Rejected</button>
         </div>
 
         <!-- filter section -->
         <section id="filter-card" class="bg-white rounded-lg">
             <div class="text-center mt-3 py-10 hidden">
-                <img class="mx-auto" src="/asset/jobs.png" alt="">
+                <img class="mx-auto" src="./asset/jobs.png" alt="">
                 <h3 class="text-lg text-neutral-600 font-semibold">No jobs available</h3>
                 <p class="text-neutral-500">Check back soon for new job opportunities</p>
             </div>
@@ -244,7 +244,7 @@
     </main>
 
 
-    <script src="/js/script.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 
 </html>
