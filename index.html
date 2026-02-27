@@ -18,11 +18,11 @@
 </head>
 
 <body class="geist-font bg-gray-100">
-    <header class="w-11/12 mx-auto">
+    <header class="w-11/12 mx-auto px-2 sm:px-0">
         <h1 class="text-4xl font-bold">Job Application Tracker</h1>
 
         <!-- count section -->
-        <section class="grid grid-cols-3 gap-4 mt-5">
+        <section class="grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-4 mt-5">
             <div class="bg-white p-3 rounded-lg">
                 <p class="font-semibold text-lg">Total</p>
                 <p id="all-count" class="font-bold text-3xl">0</p>
@@ -42,13 +42,13 @@
 
     <!-- main part -->
     <main class="w-11/12 mx-auto pb-8">
-        <div class="flex justify-between">
+        <div class="flex flex-col sm:flex-row sm:justify-between gap-2">
             <h2 class="text-neutral-600 text-2xl font-semibold">Available Jobs</h2>
             <p class="text-neutral-600 font-semibold"><span id="current-status">0</span> jobs</p>
         </div>
 
         <!-- toggle btn -->
-        <div class="toggle-btn text-neutral-500 my-4 space-x-1.5">
+        <div class="toggle-btn text-neutral-500 my-4 flex flex-wrap gap-2">
             <button onclick="toggleStyle('btn-all')" id="btn-all"
                 class="btn bg-sky-500 text-white px-4 py-1 rounded-md">All</button>
             <button onclick="toggleStyle('btn-interview')" id="btn-interview"
@@ -71,7 +71,7 @@
 
             <!-- card-1 -->
             <div class="card bg-white rounded-md border-l-4 border-transparent">
-                <div class="flex justify-between p-5">
+                <div class="flex flex-col sm:flex-row sm:justify-between gap-4 p-4 sm:p-5">
                     <div class="space-y-2.5">
                         <h3 class="company-name text-lg text-neutral-600 font-bold">Mobile First Corp</h3>
                         <p class="job-name text-neutral-500">React Native Developer</p>
@@ -97,7 +97,7 @@
 
             <!-- card-2 -->
             <div class="card bg-white rounded-md">
-                <div class="flex justify-between p-5">
+                <div class="flex flex-col sm:flex-row sm:justify-between gap-4 p-4 sm:p-5">
                     <div class="space-y-2.5">
                         <h3 class="company-name text-lg text-neutral-600 font-bold">WebFlow Agency</h3>
                         <p class="job-name text-neutral-500">Web Designer & Developer</p>
@@ -123,7 +123,7 @@
 
             <!-- card-3 -->
             <div class="card bg-white rounded-md">
-                <div class="flex justify-between p-5">
+                <div class="flex flex-col sm:flex-row sm:justify-between gap-4 p-4 sm:p-5">
                     <div class="space-y-2.5">
                         <h3 class="company-name text-lg text-neutral-600 font-bold">DataViz Solutions</h3>
                         <p class="job-name text-neutral-500">Data Visualization Specialist</p>
@@ -149,7 +149,7 @@
 
             <!-- card-4 -->
             <div class="card bg-white rounded-md">
-                <div class="flex justify-between p-5">
+                <div class="flex flex-col sm:flex-row sm:justify-between gap-4 p-4 sm:p-5">
                     <div class="space-y-2.5">
                         <h3 class="company-name text-lg text-neutral-600 font-bold">CloudFirst Inc</h3>
                         <p class="job-name text-neutral-500">Backend Developer</p>
@@ -175,7 +175,7 @@
 
             <!-- card-5 -->
             <div class="card bg-white rounded-md">
-                <div class="flex justify-between p-5">
+                <div class="flex flex-col sm:flex-row sm:justify-between gap-4 p-4 sm:p-5">
                     <div class="space-y-2.5">
                         <h3 class="company-name text-lg text-neutral-600 font-bold">Innovation Labs</h3>
                         <p class="job-name text-neutral-500">UI/UX Engineer</p>
@@ -201,7 +201,7 @@
 
             <!-- card-6 -->
             <div class="card bg-white rounded-md">
-                <div class="flex justify-between p-5">
+                <div class="flex flex-col sm:flex-row sm:justify-between gap-4 p-4 sm:p-5">
                     <div class="space-y-2.5">
                         <h3 class="company-name text-lg text-neutral-600 font-bold">MegaCorp Solutions</h3>
                         <p class="job-name text-neutral-500">JavaScript Developer</p>
@@ -227,7 +227,7 @@
 
             <!-- card-7 -->
             <div class="card bg-white rounded-md">
-                <div class="flex justify-between p-5">
+                <div class="flex flex-col sm:flex-row sm:justify-between gap-4 p-4 sm:p-5">
                     <div class="space-y-2.5">
                         <h3 class="company-name text-lg text-neutral-600 font-bold">StartupXYZ</h3>
                         <p class="job-name text-neutral-500">Full Stack Engineer</p>
@@ -253,7 +253,7 @@
 
             <!-- card-8 -->
             <div class="card bg-white rounded-md">
-                <div class="flex justify-between p-5">
+                <div class="flex flex-col sm:flex-row sm:justify-between gap-4 p-4 sm:p-5">
                     <div class="space-y-2.5">
                         <h3 class="company-name text-lg text-neutral-600 font-bold">TechCorp Industries</h3>
                         <p class="job-name text-neutral-500">Senior Frontend Developer</p>
